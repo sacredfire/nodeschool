@@ -1,6 +1,6 @@
-module.exports = upperCaser;
+module.exports = upperCaser
 
-function upperCaser(input) {
-    return input.toUpperCase();
+function upperCaser (input) {
+  return input.toUpperCase()
 }
 
