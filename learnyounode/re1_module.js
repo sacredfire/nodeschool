@@ -6,8 +6,6 @@ module.exports = function (path, ext, cb) {
     var filteredData = data.filter(function (x) {
       return (x.match('.' + ext))
     })
-    filteredData.forEach(function (y) {
-      cb(null, y)
-    })
+    cb(null, filteredData)
   })
 }
