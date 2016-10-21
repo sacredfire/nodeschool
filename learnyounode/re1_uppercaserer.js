@@ -3,7 +3,7 @@ var map = require('through2-map')
 
 var server = http.createServer(function (req, res) {
   if (req.method !== 'POST') {
-    console.log('Pls supply POST request')
+    return res.end('Pls supply POST request')
   }
   req.pipe(map(function (chunk) {
     return chunk.toString().toUpperCase()
